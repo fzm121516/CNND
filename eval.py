@@ -27,6 +27,9 @@ for v_id, val in enumerate(vals):
     model.eval()
 
     acc, ap, _, _, _, _ = validate(model, opt)
+    # 保留小数点后三位
+    acc = format(acc, '.4f')
+    ap = format(ap, '.4f')
     rows.append([val, acc, ap])
     print("({}) acc: {}; ap: {}".format(val, acc, ap))
 
@@ -34,3 +37,4 @@ csv_name = results_dir + '/{}.csv'.format(model_name)
 with open(csv_name, 'w') as f:
     csv_writer = csv.writer(f, delimiter=',')
     csv_writer.writerows(rows)
+
