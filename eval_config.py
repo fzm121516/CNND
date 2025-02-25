@@ -29,16 +29,23 @@ multiclass = [0, 0, 0, 0, 0, 0, 0, 0]
 
 
 
+# # root to the testsets
+# dataroot = '/home/fanzheming/zm/NPR-DeepfakeDetection/dataset/Diffusion1kStep'
+
+# # list of synthesis algorithms
+# vals = [ 'dalle', 'ddpm', 'guided-diffusion' ,'improved-diffusion', 'midjourney']
+
+# # indicates if corresponding testset has multiple classes
+# multiclass = [0, 5, 0, 0, 0]
+
 # root to the testsets
-dataroot = '/home/fanzheming/zm/NPR-DeepfakeDetection/dataset/Diffusion1kStep'
+dataroot = '/home/ubuntu/genimagestest/test'
 
 # list of synthesis algorithms
-vals = [ 'dalle', 'ddpm', 'guided-diffusion' ,'improved-diffusion', 'midjourney']
+vals = [ 'wukong', 'VQDM', 'sd14', 'sd15', 'Midjourney', 'glide', 'biggan', 'adm']
 
 # indicates if corresponding testset has multiple classes
-multiclass = [0, 5, 0, 0, 0]
-
-
+multiclass = [0, 0, 0, 0, 0, 0, 0, 0]
 
 # model
 model_path = 'weights/blur_jpg_prob0.1.pth'
