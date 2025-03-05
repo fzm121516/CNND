@@ -1,6 +1,7 @@
 
-CUDA_VISIBLE_DEVICES=1 python3 eval.py
+CUDA_VISIBLE_DEVICES=2 python3 eval.py
 
+CUDA_VISIBLE_DEVICES=2 python3 eval2.py
 
 ## Detecting CNN-Generated Images [[Project Page]](https://peterwang512.github.io/CNNDetection/)
 

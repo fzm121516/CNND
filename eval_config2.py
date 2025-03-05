@@ -9,23 +9,25 @@ mkdir(results_dir)
 # # root to the testsets
 # dataroot = '/home/fanzheming/zm/NPR-DeepfakeDetection/dataset/ForenSynths'
 
-dataroot = '/home/ubuntu/jpeg/jpeg75/foren/test'
-# # list of synthesis algorithms
-vals = ['progan', 'stylegan', 'biggan', 'cyclegan', 'stargan', 'gaugan',
-        'deepfake', 'stylegan2']
-# # indicates if corresponding testset has multiple classes
-# multiclass = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+# dataroot = '/home/ubuntu/jpeg/jpeg95/foren/test'
+# # # list of synthesis algorithms
+# vals = ['progan', 'stylegan', 'biggan', 'cyclegan', 'stargan', 'gaugan',
+#         'deepfake', 'stylegan2']
+# # # indicates if corresponding testset has multiple classes
+# # multiclass = [1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0]
 
-multiclass = [1, 1, 0, 1, 0, 0, 0,1, ]
+# multiclass = [1, 1, 0, 1, 0, 0, 0,1, ]
+
+
 
 # # root to the testsets
 # dataroot = '/home/fanzheming/zm/NPR-DeepfakeDetection/dataset/UniversalFakeDetect'
-
+dataroot = '/home/ubuntu/jpeg/jpeg75/unifd/test'
 # # list of synthesis algorithms
-# vals = [ 'glide_100_10', 'ldm_200_cfg', 'glide_50_27' ,'ldm_100', 'glide_100_27', 'dalle', 'ldm_200', 'guided']
+vals = [ 'glide_100_10', 'ldm_200_cfg', 'glide_50_27' ,'ldm_100', 'glide_100_27', 'dalle', 'ldm_200', 'guided']
 
 # indicates if corresponding testset has multiple classes
-# multiclass = [0, 0, 0, 0, 0, 0, 0, 0]
+multiclass = [0, 0, 0, 0, 0, 0, 0, 0]
 
 
 
